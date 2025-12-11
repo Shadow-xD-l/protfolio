@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roshan Maharjan - Resume</title>
+    <style>
+        :root {
+            --primary: #1D1D1F;
+            --secondary: #86868B;
+            --accent: #2997FF;
+            --bg: #FFFFFF;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--primary);
+            background: #F5F5F7;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            background: white;
+            width: 100%;
+            max-width: 850px;
+            padding: 60px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        header {
+            border-bottom: 2px solid #F5F5F7;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .header-left h1 {
+            font-size: 2.8rem;
+            margin: 0;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+        .header-left .title {
+            font-size: 1.2rem;
+            color: var(--secondary);
+            margin-top: 5px;
+            font-weight: 500;
+        }
+        .header-right {
+            text-align: right;
+            font-size: 0.9rem;
+            color: var(--secondary);
+        }
+        .header-right a {
+            color: var(--accent);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 2px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--secondary);
+            margin-bottom: 20px;
+            border-bottom: 1px solid #E5E5E5;
+            padding-bottom: 10px;
+        }
+        .job, .edu {
+            margin-bottom: 20px;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        .main-text {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        .sub-text {
+            color: var(--primary);
+        }
+        .date {
+            color: var(--secondary);
+            font-style: italic;
+        }
+        ul {
+            margin: 10px 0 0 0;
+            padding-left: 18px;
+            color: #424245;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .skill-cat strong {
+            display: block;
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+        .skill-cat span {
+            color: #424245;
+            font-size: 0.95rem;
+        }
+        @media print {
+            body { background: white; padding: 0; }
+            .container { box-shadow: none; padding: 0; max-width: 100%; }
+            .no-print { display: none; }
+            a { text-decoration: none; color: inherit; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <h1>Roshan Maharjan</h1>
+                <div class="title">Software Engineer & AI Specialist</div>
+            </div>
+            <div class="header-right">
+                <div>Kathmandu, Nepal</div>
+                <a href="mailto:roshanmaharjan737@gmail.com">roshanmaharjan737@gmail.com</a>
+                <a href="https://github.com/Shadow-xD-l" target="_blank">github.com/Shadow-xD-l</a>
+                <a href="https://www.linkedin.com/in/shadow-xd-21385639a/" target="_blank">linkedin.com/in/shadow-xd</a>
+                <a href="https://x.com/Shadow003457468" target="_blank">x.com/Shadow003457468</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>Summary</h2>
+            <p style="color: #424245;">
+                Innovative and results-driven 19-year-old AI Developer with a strong foundation in Computer Science. 
+                Proficient in building scalable web applications and deploying machine learning models. 
+                Passionate about leveraging technology to solve complex problems. Currently pursuing B.Tech in AI at NEIT.
+            </p>
+        </section>
+
+        <div class="no-print">
+            <a href="/" style="position: fixed; top: 20px; left: 20px; text-decoration: none; color: #1D1D1F; background: rgba(255,255,255,0.8); backdrop-filter: blur(10px); padding: 10px 20px; border-radius: 20px; font-size: 0.9rem; font-weight: 500; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border: 1px solid rgba(0,0,0,0.1); transition: all 0.2s;">
+                ← Back
+            </a>
+            <button onclick="window.print()" style="position: fixed; top: 20px; right: 20px; background: #0071e3; color: white; border: none; padding: 10px 20px; border-radius: 20px; cursor: pointer; font-size: 0.9rem; font-weight: 500; box-shadow: 0 4px 12px rgba(0,113,227,0.3); transition: all 0.2s;">
+                Download PDF
+            </button>
+        </div>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-cat">
+                    <strong>Languages</strong>
+                    <span>Python, JavaScript, C++, SQL</span>
+                </div>
+                <div class="skill-cat">
+                    <strong>Frontend</strong>
+                    <span>React.js, Styled Components, HTML5, CSS3, Framer Motion</span>
+                </div>
+                <div class="skill-cat">
+                    <strong>AI / Machine Learning</strong>
+                    <span>PyTorch, TensorFlow, OpenCV, NLP, GANs</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="edu">
+                <div class="row">
+                    <span class="main-text">National Institute of Engineering and Technology (NEIT)</span>
+                    <span class="date">2025 - Present</span>
+                </div>
+                <div class="sub-text">B.Tech in Artificial Intelligence</div>
+            </div>
+            <div class="edu">
+                <div class="row">
+                    <span class="main-text">Capitol Hill College</span>
+                    <span class="date">2023 - 2025</span>
+                </div>
+                <div class="sub-text">+2 Science (Computer Science Major)</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <div class="job">
+                <div class="row">
+                    <span class="main-text">AI Image Generator</span>
+                    <span class="date">2024</span>
+                </div>
+                <ul>
+                    <li>Designed and trained a GAN-based model to generate high-quality artistic images from textual descriptions.</li>
+                    <li>Built a responsive React frontend interface consuming the model via a Python Flask API.</li>
+                    <li>Optimized inference time by 40% using model quantization techniques.</li>
+                </ul>
+            </div>
+            <div class="job">
+                <div class="row">
+                    <span class="main-text">Smart Home Automation System</span>
+                    <span class="date">2023</span>
+                </div>
+                <ul>
+                    <li>Developed a voice-controlled home automation system using Arduino and Raspberry Pi.</li>
+                    <li>Implemented a secure MQTT broker for real-time device communication.</li>
+                    <li>Reduced energy consumption by 15% through intelligent scheduling algorithms.</li>
+                </ul>
+            </div>
+             <div class="job">
+                <div class="row">
+                    <span class="main-text">Resume Parser</span>
+                    <span class="date">2023</span>
+                </div>
+                <ul>
+                    <li>Created an NLP pipeline to extract and structure data from raw resume files (PDF/DOCX).</li>
+                    <li>Implemented entity recognition to identify skills, education, and experience with 90% accuracy.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <div style="text-align: center; margin-top: 50px; font-size: 0.9rem; color: #86868B;">
+            <i>References available upon request.</i>
+        </div>
+    </div>
+    <script>
+        // Auto-print if query param is set
+        window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('print') === 'true') {
+                setTimeout(() => {
+                     window.print();
+                }, 500); // Slight delay to ensure styles render
+            }
+        }
+    </script>
+</body>
+</html>
