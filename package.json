@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npm run build && git add dist && git commit -m 'Update build' && git push origin main"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
